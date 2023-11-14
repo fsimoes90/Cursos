@@ -1,4 +1,4 @@
-var numeroSecreto = paeseInt(Math.random() * 1001);
+var numeroSecreto = parseInt(Math.random() * 1001);
 var chute;
 
 while (true) {
