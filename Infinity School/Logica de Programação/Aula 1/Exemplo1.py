@@ -11,4 +11,5 @@ print(a+b)
 
 # Interação
 nome = input('Informe uma nome: ')
-print(nome)
+# print('Seu nome é: ' , nome)
+print(f'Seu nome é: {nome}')
