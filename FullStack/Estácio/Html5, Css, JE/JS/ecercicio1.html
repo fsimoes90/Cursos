@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Vetores em Javascript</title>
+</head>
+<body>
+</body>
+    <script type="text/javascript">
+        var numeros = []
+        numeros [0] = solicitaPrimeiroNumero();
+        numeros [1] = solicitaSegundoNumeto();
+
+        var resultadoDivisao = divida(numeros);
+        alert('O resultado da divisão é igual a: ' + resultadoDivisao);
+
+        function solicitaPrimeiroNumero(){
+            var numero1 = prompt('Insira o primeiro número: ')
+            if(numero1 < 0){
+                alert('O número precisa ser inteiro e positivo');
+                return solicitaPrimeiroNumero();
+            } else{
+                return numero1;
+            }
+        }
+
+        function solicitaSegundooNumero(){
+            var numero1 = prompt('Insira o segundo número: ')
+            if(numero1 < 0){
+                alert('O número precisa ser inteiro e positivo');
+                return solicitaSegundooNumero();
+            } else{
+                return numero2;
+            }
+        }
+
+        function divide(numeros){
+            var resultado = 0;
+            resultado = numeros[0] / numeros[1]
+            }
+            return resultado
+    </script>
+</html>

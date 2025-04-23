@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Praticando Javascript - Exercício 1</title>
+</head>
+<body>
+       
+</body>
+     
+<script type="text/javascript">
+    var numero1 = parseFloat(prompt("Insira o primeiro número: "));
+    var operador = prompt("Insira o operador: ");
+    var numero2 = parseFloat(prompt("Insira o segundo número: "));
+    var resultadoOperacao;
+
+    if (operador === '+') {
+        resultadoOperacao = soma(numero1, numero2);
+        alert('O resultado da soma é igual a: ' + resultadoOperacao);
+    } else if (operador === '-') {
+        resultadoOperacao = subtrai(numero1, numero2);
+        alert('O resultado da subtração é igual a: ' + resultadoOperacao);
+    } else if (operador === '*') {
+        resultadoOperacao = multiplica(numero1, numero2);
+        alert('O resultado da multiplicação é igual a: ' + resultadoOperacao);
+    } else if (operador === '/') {
+        resultadoOperacao = divide(numero1, numero2);
+        alert('O resultado da divisão é igual a: ' + resultadoOperacao);
+    } else {
+        alert('Operador inválido.');
+    }
+
+    function soma(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function subtrai(numero1, numero2) {
+        return numero1 - numero2;
+    }
+
+    function multiplica(numero1, numero2) {
+        return numero1 * numero2;
+    }
+
+    function divide(numero1, numero2) {
+        if (numero2 === 0) {
+            alert('Divisão por zero não é permitida.');
+            return undefined;
+        }
+        return numero1 / numero2;
+    }
+</script>
+</html>
