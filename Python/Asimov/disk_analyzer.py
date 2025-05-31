@@ -24,7 +24,7 @@ def format_size(size_bytes):
 def get_installed_programs():
     installed = set()
     try:
-        reg_path pastries r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
+        reg_path = r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
         with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, reg_path) as key:
             for i in range(winreg.QueryInfoKey(key)[0]):
                 try:
